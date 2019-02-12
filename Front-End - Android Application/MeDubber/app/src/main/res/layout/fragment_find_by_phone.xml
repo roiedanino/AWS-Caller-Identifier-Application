@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindByPhoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/verticalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_purple"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/findByPhoneTitle"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="14sp"
+            android:text="Find out who called you"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/horizontalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="146dp"
+                android:layout_height="57dp"
+                android:text="Phone Number:"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/phoneInput"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:hint="Ex: 0525798315"
+                android:inputType="phone"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/findButton"
+                android:layout_width="48dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="#93339e"
+                android:src="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Not Found"
+            android:textAlignment="center"
+            android:textColor="#f8bcf7"
+            android:textSize="36sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/findByPhoneImage"
+            android:layout_width="185dp"
+            android:layout_height="169dp"
+            android:layout_marginStart="109dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="282dp"
+            android:src="@android:drawable/ic_search_category_default"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+
+            tools:src="@tools:sample/avatars[7]" />
+    </LinearLayout>
+</FrameLayout>
