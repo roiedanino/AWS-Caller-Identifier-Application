@@ -1,14 +1,5 @@
 ########################  MeDubber - Phone Numbers Recognition ######################## 
 
-**** Contributors ****
-
-Or Givati
-Moshe Amini
-Linor Dolev
-Roie Danino
-
-**********************
-
 
 #### Instructions ###
 
